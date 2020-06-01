@@ -8,7 +8,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 
 def get_mode(column, dataframe):
     """
-    Takes in a column name (str) and returns a mode for that column from a given dataframe.
+    Takes in a column name (str) and pandas DataFrame and returns a mode for that column from a given dataframe.
     """
     return dataframe[column].mode()[0]
 
@@ -199,9 +199,15 @@ def user_stats(df):
     print('-'*40)
 
 def data_print(dataframe):
-    # Asks to print first 5 rows of a dataframe.
-    # If the user goes through every row in the table, will start the table from the beginning.
+    '''
+    Asks to print first 5 rows of a dataframe.
+    If the user goes through every row in the table, will start scrolling through the table from the beginning.
 
+    * "cont" used as iterator to scroll through data.
+    * "move_on" used in conditional to continue/end function.
+    * "limit" provides number of rows that can be returned.
+    '''
+    
     cont = 0
     limit = dataframe.shape[0]
     move_on = 0
