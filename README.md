@@ -1,15 +1,13 @@
-### Date created
-Include the date you created this project and README file.
+Project Updated 31/05/2020
+Project Created 31/05/2020
 
-### Project Title
-Replace the Project Title
+Bikeshare Basic Statistics
 
-### Description
-Describe what your project is about and what it does
+Summary:
+Allows user to interactively explore bikeshare statistics for Chicago, New York City, and Washington based on month and the day of the week.
 
-### Files used
-Include the files used
-
-### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Files used:
+bikeshare.py
+chicago.csv
+new_york_city.csv
+washington.csv
