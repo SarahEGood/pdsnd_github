@@ -146,7 +146,7 @@ def station_stats(df):
     print('The most common combination of start and end station trip was {}.'.format(combo_mode))
 
     #Delete columns after using them.
-    df.drop(columns=['Both Stations'])
+    df.drop(columns=['Both Stations'], inplace=True)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
