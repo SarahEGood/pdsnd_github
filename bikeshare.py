@@ -8,7 +8,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 
 def get_mode(column, dataframe):
     """
-    Takes in a column name (str) and returns a mode for that column from a given dataframe.
+    Takes in a column name (str) and pandas DataFrame and returns a mode for that column from a given dataframe.
     """
     return dataframe[column].mode()[0]
 
